@@ -5,6 +5,10 @@ type myResponse =
 
 let areYouCrushingIt = No
 
+type single = None | Instagram(string)
+
+let singleData = Instagram("hello")
+
 type account =
   | None
   | Instagram(string)

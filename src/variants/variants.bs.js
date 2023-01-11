@@ -4,6 +4,10 @@
 
 var areYouCrushingIt = /* No */1;
 
+var singleData = /* Instagram */{
+  _0: "hello"
+};
+
 var myAccount = {
   TAG: /* Facebook */1,
   _0: "Josh",
@@ -24,6 +28,7 @@ var me = {
 };
 
 exports.areYouCrushingIt = areYouCrushingIt;
+exports.singleData = singleData;
 exports.myAccount = myAccount;
 exports.friendAccount = friendAccount;
 exports.me = me;
