@@ -24,6 +24,8 @@ console.log("This red-ish");
 
 console.log("This is red-ish");
 
+var message = "Hello Apple";
+
 var me = {
   NAME: "Instagram",
   VAL: "Jenny"
@@ -39,9 +41,22 @@ var him = {
 
 var myColor = "Ruby";
 
+var basic = "Red";
+
+var foreground = "Green";
+
+var background = "Red";
+
+var theCompany = "Apple";
+
 exports.render = render;
 exports.render1 = render1;
 exports.me = me;
 exports.him = him;
 exports.myColor = myColor;
+exports.basic = basic;
+exports.foreground = foreground;
+exports.background = background;
+exports.theCompany = theCompany;
+exports.message = message;
 /*  Not a pure module */

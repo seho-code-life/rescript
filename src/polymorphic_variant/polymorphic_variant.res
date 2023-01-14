@@ -56,3 +56,24 @@ switch myColor {
 | #Ruby | #Redwood | #Rust => Js.log("This is red-ish")
 | other => Js.log2("Other color than red and blue: ", other)
 }
+
+// 多态变体由于编译出的代码和js风格一致, 所以非常适合和js进行互操作
+
+// 多态还可以表达非封闭的类型定义, 比如我至少要..., 我最多要...
+
+// Only #Red allowed. Closed.
+let basic: [#Red] = #Red
+
+// May contain #Red, or any other value. Open
+// here, foreground will actually be inferred as [> #Red | #Green]
+let foreground: [> #Red] = #Green
+
+// The value must be, at most, one of #Red or #Blue
+// Only #Red and #Blue are valid values
+let background: [< #Red | #Blue] = #Red
+
+// 强制类型转换
+type company = [#Apple | #Facebook]
+let theCompany: company = #Apple
+
+let message = "Hello " ++ (theCompany :> string)
