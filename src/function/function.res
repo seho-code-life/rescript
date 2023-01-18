@@ -28,9 +28,9 @@ let add = (. x, y) => x + y
 
 let b = add(. 1, 2)
 
-let getUserName = async (userId) => userId
+// let getUserName = async (userId) => userId
 
-let greetUser = async (userId) => {
-  let name = await getUserName(userId)
-  "Hello " ++ name ++ "!"
-}
+// let greetUser = async (userId) => {
+//   let name = await getUserName(userId)
+//   "Hello " ++ name ++ "!"
+// }
